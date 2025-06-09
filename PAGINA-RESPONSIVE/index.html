@@ -76,3 +76,67 @@
     </footer>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover con texto</title>
+  <style>
+    .contenedor {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      margin: 50px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .texto-hover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-size: 18px;
+    }
+
+    .contenedor:hover .texto-hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <div class="texto-hover">¡Hola, aparezco con hover!</div>
+  </div>
+
+</body>
+</html>
+
+
+---
+
+🔍 ¿Qué está pasando aquí?
+
+.contenedor: es el bloque principal que se ve en pantalla.
+
+.texto-hover: es el texto oculto que aparecerá solo cuando el mouse esté sobre el contenedor.
+
+Usamos opacity: 0 para esconder el texto y opacity: 1 al hacer hover.
+
+transition hace que el texto aparezca suavemente.
+
+
+
+---
+
+Si prefieres que el texto aparezca como una especie de tooltip flotante, también puedo darte ese ejemplo.
+
+¿Quieres que aparezca en una posición específica (arriba, abajo, etc.) o con un efecto distinto?
+
